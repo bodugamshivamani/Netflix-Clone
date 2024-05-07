@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    height: 70vh;
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+nav{
+    height: 90px;
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    margin-top: 0.85rem;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    height: calc(100% - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(101, 101, 101);
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(251, 251, 251, 0.09);
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.btn select{
+    color: white;
+    background-color: rgba(251, 251, 251, 0.09);
+    border-color: transparent;
+}
+.btn option{
+    color: black;
+    background-color: rgba(251, 251, 251, 0.09);
+}
+.btn-red{
+    color: white;
+    background-color: red;
+    font-weight: 400;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.btn-red-sm{
+    color: white;
+    background-color: red;
+    
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    align-items: center;
+}
+@media screen and (max-width: 800px){
+    .main{
+        flex-wrap: wrap;     
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1){
+        font-size: 1.5em;
+    }
+    .hero-buttons{
+        flex-wrap: wrap;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+}
+.secImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secImg img{
+     width: 40vw;
+     z-index: 1;
+}
+.secImg video{
+    width: 30vw;
+    position: absolute;
+}
+.first> div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first> div :nth-child(2){
+    font-size: 24px;
+}
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.four img{
+    width: 100%;
+}
+.faq{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.faq h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.faqbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.faqbox div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.212);
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 24px;
+}
+.faqbox :hover { 
+    transition: all 1s ease-out;
+    background-color: rgba(255, 255, 255, 0.168);
+}
+.restart{
+    text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+    font-size: 20px;
+
+}
+.email{
+    background-color: transparent;
+    color: white;
+    padding: 0.4rem 3rem;
+  
+}
+.end{   
+    margin-bottom: 3rem;
+}
+footer{ 
+    margin: 3rem;
+}
+footer h5{
+    font-size: 1rem;
+    margin-top: 3rem;
+    color: gray;
+}
+footer h5 a{
+    color: gray;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+ul a{
+    margin-top: 0.7em;
+    color: gray;
+
+}
+.footbtn{
+    margin: 1rem;
+}
+.footend{
+    display: flex;
+    color: gray;
+}
